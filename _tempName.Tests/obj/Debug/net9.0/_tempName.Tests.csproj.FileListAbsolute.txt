@@ -101,3 +101,5 @@ c:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName.Tests
 c:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName.Tests\obj\Debug\net9.0\_tempName.Tests.pdb
 c:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName.Tests\obj\Debug\net9.0\_tempName.Tests.genruntimeconfig.cache
 c:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName.Tests\obj\Debug\net9.0\ref\_tempName.Tests.dll
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName.Tests\bin\Debug\net9.0\_devHelp.dll
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName.Tests\bin\Debug\net9.0\_devHelp.pdb
