@@ -1,4 +1,4 @@
-namespace src;
+namespace _tempName;
 
 public interface IRemoteFunc<TTarget, TReturn> where TTarget : struct
 { 

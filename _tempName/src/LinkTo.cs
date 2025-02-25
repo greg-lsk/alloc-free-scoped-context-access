@@ -1,4 +1,4 @@
-namespace src;
+namespace _tempName;
 
 
 public unsafe readonly struct LinkTo<TTarget> where TTarget : struct
