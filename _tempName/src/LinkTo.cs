@@ -8,7 +8,7 @@ public unsafe readonly struct LinkTo<TTarget> where TTarget : struct
 
     public ref TTarget Target => ref *_target;
 
-    internal static LinkTo<TTarget> Create(in TTarget _target)
+    public static LinkTo<TTarget> Create(in TTarget _target)
     {
         fixed (TTarget* ptr = &_target)
         {
