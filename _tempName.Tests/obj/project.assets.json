@@ -412,6 +412,19 @@
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "_devHelp/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "_tempName": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/_devHelp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/_devHelp.dll": {}
+        }
+      },
       "_tempName/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -943,6 +956,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "_devHelp/1.0.0": {
+      "type": "project",
+      "path": "../_devHelp/_devHelp.csproj",
+      "msbuildProject": "../_devHelp/_devHelp.csproj"
+    },
     "_tempName/1.0.0": {
       "type": "project",
       "path": "../_tempName/_tempName.csproj",
@@ -952,6 +970,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.NET.Test.Sdk >= 17.11.1",
+      "_devHelp >= 1.0.0",
       "_tempName >= 1.0.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
@@ -964,11 +983,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName.Tests\\_tempName.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName.Tests\\_tempName.Tests.csproj",
       "projectName": "_tempName.Tests",
-      "projectPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName.Tests\\_tempName.Tests.csproj",
+      "projectPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName.Tests\\_tempName.Tests.csproj",
       "packagesPath": "C:\\Users\\GregL\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName.Tests\\obj\\",
+      "outputPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\GregL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -985,8 +1004,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj": {
-              "projectPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj"
+            "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj": {
+              "projectPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj"
+            },
+            "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj": {
+              "projectPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj"
             }
           }
         }
