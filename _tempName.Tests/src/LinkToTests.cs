@@ -44,6 +44,18 @@ public class LinkToTests
     }
 
     [Fact]
+    public void IsActive_ReturnsTrue_WhenLinkEscapes_ScopeOfTarget()
+    {
+        // Arrange
+
+        // Act
+        var linkTo = ScopeHelper.DummyEscapedLink<ReadonlyDummyStruct>(() => new(42, "Hellow"));
+
+        // Assert
+        Assert.True(linkTo.IsActive());
+    }    
+
+    [Fact]
     public void IsActive_ReturnsFalse_When_UsedUnassigned()
     {
         // Arrange
@@ -86,18 +98,6 @@ public class LinkToTests
         var linkTo = LinkTo<int>.Create(default);
 
         // Act
-
-        // Assert
-        Assert.True(linkTo.IsActive());
-    }
-
-    [Fact]
-    public void IsActive_ReturnsTrue_WhenEscaping_ScopeOfTarget()
-    {
-        // Arrange
-
-        // Act
-        var linkTo = ScopeHelper.DummyEscapedLink<ReadonlyDummyStruct>(() => new(42, "Hellow"));
 
         // Assert
         Assert.True(linkTo.IsActive());
