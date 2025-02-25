@@ -4,9 +4,9 @@ namespace _devHelp;
 
 public static class ScopeHelper
 {
-    public static void DummyInvocationScope(ref LinkTo<ReadonlyDummyStruct> linkTo)
+    public static LinkTo<T> DummyInvocationScope<T>(Func<T> createT) where T : struct
     {
-        var scopedContext = new ReadonlyDummyStruct(42, "Hello");
-        linkTo = LinkTo<ReadonlyDummyStruct>.Create(in scopedContext);
+        var scopedContext = createT();
+        return LinkTo<T>.Create(in scopedContext);
     }
 }
