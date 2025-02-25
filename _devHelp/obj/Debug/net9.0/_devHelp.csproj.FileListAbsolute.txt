@@ -1,0 +1,16 @@
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\bin\Debug\net9.0\_devHelp.deps.json
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\bin\Debug\net9.0\_devHelp.dll
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\bin\Debug\net9.0\_devHelp.pdb
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\bin\Debug\net9.0\_tempName.dll
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\bin\Debug\net9.0\_tempName.pdb
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\_devHelp.csproj.AssemblyReference.cache
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\_devHelp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\_devHelp.AssemblyInfoInputs.cache
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\_devHelp.AssemblyInfo.cs
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\_devHelp.csproj.CoreCompileInputs.cache
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\_devHelp.sourcelink.json
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\_devHelp.csproj.Up2Date
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\_devHelp.dll
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\refint\_devHelp.dll
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\_devHelp.pdb
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_devHelp\obj\Debug\net9.0\ref\_devHelp.dll
