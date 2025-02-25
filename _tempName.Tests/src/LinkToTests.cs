@@ -30,7 +30,7 @@ public class LinkToTests
     }
 
     [Fact]
-    public void TargetIsSet_ReturnsFalse_When_UsedUnassigned()
+    public void IsActive_ReturnsFalse_When_UsedUnassigned()
     {
         // Arrange
         LinkTo<int> linkTo;
@@ -42,7 +42,7 @@ public class LinkToTests
     }  
     
     [Fact]
-    public void TargetIsSet_ReturnsFalse_When_UsingDefaultCtor()
+    public void IsActive_ReturnsFalse_When_UsingDefaultCtor()
     {
         // Arrange
         var linkTo = new LinkTo<int>();
@@ -54,7 +54,7 @@ public class LinkToTests
     }
 
     [Fact]
-    public void TargetIsSet_ReturnsFalse_When_Initialized_UsingDefaultKeyword()
+    public void IsActive_ReturnsFalse_When_Initialized_UsingDefaultKeyword()
     {
         // Arrange
         LinkTo<int> linkTo = default;
@@ -66,7 +66,7 @@ public class LinkToTests
     }
 
     [Fact]
-    public void TargetIsSet_ReturnsTrue_When_UsingDefault_AsCreateArgument()
+    public void IsActive_ReturnsTrue_When_UsingDefault_AsCreateArgument()
     {
         // Arrange
         var linkTo = LinkTo<int>.Create(default); ;
@@ -78,7 +78,7 @@ public class LinkToTests
     }
 
     [Fact]
-    public void TargetIsSet_ReturnsTrue_WhenEscaping_ScopeOfTarget()
+    public void IsActive_ReturnsTrue_WhenEscaping_ScopeOfTarget()
     {
         //Arrange
 
