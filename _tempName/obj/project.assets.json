@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\src\\src.csproj",
-      "projectName": "src",
-      "projectPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\src\\src.csproj",
+      "projectUniqueName": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj",
+      "projectName": "_tempName",
+      "projectPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj",
       "packagesPath": "C:\\Users\\GregL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\src\\obj\\",
+      "outputPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\GregL\\AppData\\Roaming\\NuGet\\NuGet.Config",
