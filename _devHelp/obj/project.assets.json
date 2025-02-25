@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "_tempName/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/_tempName.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/_tempName.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "_tempName/1.0.0": {
+      "type": "project",
+      "path": "../_tempName/_tempName.csproj",
+      "msbuildProject": "../_tempName/_tempName.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "_tempName >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\GregL\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj": {
+              "projectPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
