@@ -30,7 +30,7 @@ public class LinkToTests
     }
 
     [Fact]
-    public void IsVoid_ReturnsTrue_When_UsedUnassigned()
+    public void TargetIsSet_ReturnsFalse_When_UsedUnassigned()
     {
         // Arrange
         LinkTo<int> linkTo;
@@ -38,11 +38,11 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.True(linkTo.IsVoid()); 
+        Assert.False(linkTo.TargetIsSet()); 
     }  
     
     [Fact]
-    public void IsVoid_ReturnsTrue_When_UsingDefaultCtor()
+    public void TargetIsSet_ReturnsFalse_When_UsingDefaultCtor()
     {
         // Arrange
         var linkTo = new LinkTo<int>();
@@ -50,11 +50,11 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.True(linkTo.IsVoid()); 
+        Assert.False(linkTo.TargetIsSet()); 
     }
 
     [Fact]
-    public void IsVoid_ReturnsTrue_When_Initialized_UsingDefaultKeyword()
+    public void TargetIsSet_ReturnsFalse_When_Initialized_UsingDefaultKeyword()
     {
         // Arrange
         LinkTo<int> linkTo = default;
@@ -62,11 +62,11 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.True(linkTo.IsVoid()); 
+        Assert.False(linkTo.TargetIsSet()); 
     }
 
     [Fact]
-    public void IsVoid_ReturnsFalse_When_UsingDefault_AsCreateArgument()
+    public void TargetIsSet_ReturnsTrue_When_UsingDefault_AsCreateArgument()
     {
         // Arrange
         var linkTo = LinkTo<int>.Create(default); ;
@@ -74,11 +74,11 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.False(linkTo.IsVoid()); 
+        Assert.True(linkTo.TargetIsSet()); 
     }
 
     [Fact]
-    public void IsVoid_ReturnsTrue_WhenEscaping_ScopeOfTarget()
+    public void TargetIsSet_ReturnsTrue_WhenEscaping_ScopeOfTarget()
     {
         //Arrange
 
@@ -86,6 +86,6 @@ public class LinkToTests
         var linkTo = ScopeHelper.DummyEscapedLink<ReadonlyDummyStruct>( () => new(42, "Hellow") );
 
         //Assert
-        Assert.True(linkTo.IsVoid());
+        Assert.True(linkTo.TargetIsSet());
     }             
 }
