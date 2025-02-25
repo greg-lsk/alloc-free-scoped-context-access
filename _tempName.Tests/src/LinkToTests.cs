@@ -38,7 +38,7 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.False(linkTo.TargetIsSet()); 
+        Assert.False(linkTo.IsActive()); 
     }  
     
     [Fact]
@@ -50,7 +50,7 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.False(linkTo.TargetIsSet()); 
+        Assert.False(linkTo.IsActive()); 
     }
 
     [Fact]
@@ -62,7 +62,7 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.False(linkTo.TargetIsSet()); 
+        Assert.False(linkTo.IsActive()); 
     }
 
     [Fact]
@@ -74,7 +74,7 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.True(linkTo.TargetIsSet()); 
+        Assert.True(linkTo.IsActive()); 
     }
 
     [Fact]
@@ -86,6 +86,6 @@ public class LinkToTests
         var linkTo = ScopeHelper.DummyEscapedLink<ReadonlyDummyStruct>( () => new(42, "Hellow") );
 
         //Assert
-        Assert.True(linkTo.TargetIsSet());
+        Assert.True(linkTo.IsActive());
     }             
 }

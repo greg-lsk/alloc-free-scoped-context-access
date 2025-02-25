@@ -16,5 +16,5 @@ public unsafe readonly struct LinkTo<TTarget> where TTarget : struct
         }
     }
 
-    public bool TargetIsSet() => _target is not null;
+    public bool IsActive() => _target is not null;
 }
