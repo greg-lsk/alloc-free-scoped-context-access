@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="src\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\_tempName\_tempName.csproj" />
   </ItemGroup>
 
