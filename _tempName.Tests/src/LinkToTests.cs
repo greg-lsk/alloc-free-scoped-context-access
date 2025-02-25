@@ -13,7 +13,7 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.Equal(expected: 42, actual: linkTo.Target); 
+        Assert.Equal(expected: 42, actual: linkTo.Target);
     }
 
     [Fact]
@@ -26,7 +26,21 @@ public class LinkToTests
         linkTo.Target++;
 
         // Assert
-        Assert.Equal(expected: 43, actual: linkTo.Target); 
+        Assert.Equal(expected: 43, actual: linkTo.Target);
+    }
+
+    [Fact]
+    public void Target_HasCorruptData_WhenLinkEscapes_ScopeOfTarget()
+    {
+        // Arrange
+
+        // Act
+        var linkTo = ScopeHelper.DummyEscapedLink<ReadonlyDummyStruct>(() => new(42, "Hellow"));
+        var intValue = linkTo.Target.IntValue;
+        var stringValue = linkTo.Target.StringValue;
+
+        // Assert
+        Assert.False(intValue == 42 && stringValue == "Hellow");
     }
 
     [Fact]
@@ -38,9 +52,9 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.False(linkTo.IsActive()); 
-    }  
-    
+        Assert.False(linkTo.IsActive());
+    }
+
     [Fact]
     public void IsActive_ReturnsFalse_When_UsingDefaultCtor()
     {
@@ -50,7 +64,7 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.False(linkTo.IsActive()); 
+        Assert.False(linkTo.IsActive());
     }
 
     [Fact]
@@ -62,30 +76,30 @@ public class LinkToTests
         // Act
 
         // Assert
-        Assert.False(linkTo.IsActive()); 
+        Assert.False(linkTo.IsActive());
     }
 
     [Fact]
     public void IsActive_ReturnsTrue_When_UsingDefault_AsCreateArgument()
     {
         // Arrange
-        var linkTo = LinkTo<int>.Create(default); ;
+        var linkTo = LinkTo<int>.Create(default);
 
         // Act
 
         // Assert
-        Assert.True(linkTo.IsActive()); 
+        Assert.True(linkTo.IsActive());
     }
 
     [Fact]
     public void IsActive_ReturnsTrue_WhenEscaping_ScopeOfTarget()
     {
-        //Arrange
+        // Arrange
 
-        //Act
-        var linkTo = ScopeHelper.DummyEscapedLink<ReadonlyDummyStruct>( () => new(42, "Hellow") );
+        // Act
+        var linkTo = ScopeHelper.DummyEscapedLink<ReadonlyDummyStruct>(() => new(42, "Hellow"));
 
-        //Assert
+        // Assert
         Assert.True(linkTo.IsActive());
-    }             
+    }
 }
