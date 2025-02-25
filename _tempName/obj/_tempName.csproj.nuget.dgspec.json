@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj": {}
+    "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj": {
+    "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj",
+        "projectUniqueName": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj",
         "projectName": "_tempName",
-        "projectPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj",
+        "projectPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj",
         "packagesPath": "C:\\Users\\GregL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\obj\\",
+        "outputPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GregL\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1004,11 +1004,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj": {
-              "projectPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj"
+            "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj": {
+              "projectPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj"
             },
-            "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj": {
-              "projectPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj"
+            "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj": {
+              "projectPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName\\_tempName.csproj"
             }
           }
         }
