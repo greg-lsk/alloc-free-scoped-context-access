@@ -1,3 +1,5 @@
+using _devHelp;
+
 namespace _tempName.Tests;
 
 public class LinkToTests
@@ -27,6 +29,18 @@ public class LinkToTests
         Assert.Equal(expected: 43, actual: linkTo.Target); 
     }
 
+    [Fact]
+    public void IsVoid_ReturnsTrue_When_UsedUnassigned()
+    {
+        // Arrange
+        LinkTo<int> linkTo;
+
+        // Act
+
+        // Assert
+        Assert.True(linkTo.IsVoid()); 
+    }  
+    
     [Fact]
     public void IsVoid_ReturnsTrue_When_UsingDefaultCtor()
     {
@@ -61,5 +75,17 @@ public class LinkToTests
 
         // Assert
         Assert.False(linkTo.IsVoid()); 
-    }           
+    }
+
+    [Fact]
+    public void IsVoid_ReturnsTrue_WhenEscaping_ScopeOfTarget()
+    {
+        //Arrange
+
+        //Act
+        var linkTo = ScopeHelper.DummyEscapedLink<ReadonlyDummyStruct>( () => new(42, "Hellow") );
+
+        //Assert
+        Assert.True(linkTo.IsVoid());
+    }             
 }
