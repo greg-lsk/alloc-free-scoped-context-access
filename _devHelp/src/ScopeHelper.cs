@@ -4,9 +4,9 @@ namespace _devHelp;
 
 public static class ScopeHelper
 {
-    public static LinkTo<T> DummyEscapedLink<T>(Func<T> createT) where T : struct
+    public static LinkTo<T> DummyEscapedLink<T>(Func<T> createInScope) where T : struct
     {
-        var scopedContext = createT();
+        var scopedContext = createInScope();
         return LinkTo<T>.Create(in scopedContext);
     }
 }
