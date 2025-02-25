@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D8op9BwyobU=",
+  "dgSpecHash": "r5nNrWfuKco=",
   "success": true,
-  "projectFilePath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName.Tests\\_tempName.Tests.csproj",
+  "projectFilePath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_tempName.Tests\\_tempName.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GregL\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\GregL\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",
