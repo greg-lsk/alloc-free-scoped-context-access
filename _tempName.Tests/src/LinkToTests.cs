@@ -53,8 +53,20 @@ public class LinkToTests
 
         // Assert
         Assert.True(linkTo.IsActive());
-    }    
+    }
 
+    [Fact]
+    public void IsActive_ReturnsTrue_When_UsingDefault_AsCreateArgument()
+    {
+        // Arrange
+        var linkTo = LinkTo<int>.Create(default);
+
+        // Act
+
+        // Assert
+        Assert.True(linkTo.IsActive());
+    }
+    
     [Fact]
     public void IsActive_ReturnsFalse_When_UsedUnassigned()
     {
@@ -89,17 +101,5 @@ public class LinkToTests
 
         // Assert
         Assert.False(linkTo.IsActive());
-    }
-
-    [Fact]
-    public void IsActive_ReturnsTrue_When_UsingDefault_AsCreateArgument()
-    {
-        // Arrange
-        var linkTo = LinkTo<int>.Create(default);
-
-        // Act
-
-        // Assert
-        Assert.True(linkTo.IsActive());
     }
 }
