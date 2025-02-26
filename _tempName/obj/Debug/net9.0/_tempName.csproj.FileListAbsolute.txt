@@ -1,0 +1,12 @@
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\bin\Debug\net9.0\_tempName.deps.json
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\bin\Debug\net9.0\_tempName.dll
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\bin\Debug\net9.0\_tempName.pdb
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\obj\Debug\net9.0\_tempName.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\obj\Debug\net9.0\_tempName.AssemblyInfoInputs.cache
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\obj\Debug\net9.0\_tempName.AssemblyInfo.cs
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\obj\Debug\net9.0\_tempName.csproj.CoreCompileInputs.cache
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\obj\Debug\net9.0\_tempName.sourcelink.json
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\obj\Debug\net9.0\_tempName.dll
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\obj\Debug\net9.0\refint\_tempName.dll
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\obj\Debug\net9.0\_tempName.pdb
+C:\Users\GregL\Documents\Coding\alloc-free-scoped-context-access\_tempName\obj\Debug\net9.0\ref\_tempName.dll
