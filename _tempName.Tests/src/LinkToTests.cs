@@ -35,7 +35,7 @@ public class LinkToTests
         // Arrange
 
         // Act
-        var linkTo = ScopeHelper.DummyEscapedLink<ReadonlyDummyStruct>(createInScope:() => new(42, "Hellow"));
+        var linkTo = ScopeHelper.DummyEscapedLink<DummyStruct>(createInScope:() => new(42, "Hellow"));
         var intValue = linkTo.Target.IntValue;
         var stringValue = linkTo.Target.StringValue;
 
@@ -49,7 +49,7 @@ public class LinkToTests
         // Arrange
 
         // Act
-        var linkTo = ScopeHelper.DummyEscapedLink<ReadonlyDummyStruct>(() => new(42, "Hellow"));
+        var linkTo = ScopeHelper.DummyEscapedLink<DummyStruct>(() => new(42, "Hellow"));
 
         // Assert
         Assert.True(linkTo.IsActive());
