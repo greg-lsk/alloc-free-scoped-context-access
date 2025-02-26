@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj": {}
+    "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj": {
+    "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj",
+        "projectUniqueName": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj",
         "projectName": "_devHelp",
-        "projectPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj",
+        "projectPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\_devHelp.csproj",
         "packagesPath": "C:\\Users\\GregL\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\obj\\",
+        "outputPath": "C:\\Users\\GregL\\Documents\\Coding\\alloc-free-scoped-context-access\\_devHelp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GregL\\AppData\\Roaming\\NuGet\\NuGet.Config",
