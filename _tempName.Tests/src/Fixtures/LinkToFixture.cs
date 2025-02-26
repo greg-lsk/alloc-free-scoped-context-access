@@ -9,6 +9,7 @@ public enum LinkState
 
 public delegate LinkTo<T> ArrangeLinkTo<T>(LinkState link, in T dummy = default) where T : struct;
 
+
 public class LinkToFixture : IDisposable
 {
     public void Dispose(){}
@@ -17,5 +18,5 @@ public class LinkToFixture : IDisposable
     {
         LinkState.Active => LinkTo<T>.Create(in dummy),
         LinkState.Inactive => default,
-    };    
+    };  
 }

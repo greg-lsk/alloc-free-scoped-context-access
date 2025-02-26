@@ -1,9 +1,13 @@
 using _devHelp;
+using _tempName.Tests.Fixtures;
 
 namespace _tempName.Tests;
 
-public class LinkToTests
+public class LinkToTests(ScopeFixture scopeFixture) : IClassFixture<ScopeFixture>
 {
+    private readonly MockEscapedLinkTo<DummyStruct> _mockEscape = scopeFixture.MockEscapedLink;
+
+
     [Fact]
     public void Create_ReturnsCorrectLink()
     {
@@ -35,9 +39,10 @@ public class LinkToTests
         // Arrange
 
         // Act
-        var linkTo = ScopeHelper.DummyEscapedLink<DummyStruct>(createInScope:() => new(42, "Hellow"));
-        var intValue = linkTo.Target.IntValue;
-        var stringValue = linkTo.Target.StringValue;
+        _mockEscape(out LinkTo<DummyStruct> link,
+                    createTargetInScope: () => new(42, "Hellow"));
+        var intValue = link.Target.IntValue;
+        var stringValue = link.Target.StringValue;
 
         // Assert
         Assert.False(intValue == 42 && stringValue == "Hellow");
@@ -49,10 +54,11 @@ public class LinkToTests
         // Arrange
 
         // Act
-        var linkTo = ScopeHelper.DummyEscapedLink<DummyStruct>(() => new(42, "Hellow"));
+        _mockEscape(out LinkTo<DummyStruct> link,
+                    createTargetInScope: () => new(42, "Hellow"));
 
         // Assert
-        Assert.True(linkTo.IsActive());
+        Assert.True(link.IsActive());
     }
 
     [Fact]
