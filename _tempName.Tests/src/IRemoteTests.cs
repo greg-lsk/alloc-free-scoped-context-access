@@ -7,7 +7,7 @@ namespace _tempName.Tests;
 public class IRemoteTests
 {
     [Fact]
-    public void Get_ReturnsCorrectValue()
+    public void Get_ReturnsCorrectValue_WhenActiveLink_IsProvided()
     {
         // Arrange
         IRemote<ReadonlyDummyStruct> dummyRemote = new DummyRemote();
