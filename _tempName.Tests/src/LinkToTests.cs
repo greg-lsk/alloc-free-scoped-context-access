@@ -5,7 +5,7 @@ namespace _tempName.Tests;
 
 public class LinkToTests(ScopeFixture scopeFixture) : IClassFixture<ScopeFixture>
 {
-    private readonly MockEscapedLinkTo<DummyStruct> _mockEscape = scopeFixture.MockEscapedLink;
+    private readonly MockEscapedLinkTo<DummyStruct> _mockEscape = scopeFixture.LinkEscapesTargetsScope;
 
 
     [Fact]

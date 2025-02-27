@@ -5,17 +5,20 @@ namespace _tempName.Tests.Fixtures.Tests;
 
 public class ScopeFixtureTest(ScopeFixture scopeFixture) : IClassFixture<ScopeFixture>
 {
-    private readonly MockEscapedLinkTo<DummyStruct> _mockEscape = scopeFixture.MockEscapedLink;
+    private readonly ScopeFixture _scopeFixture = scopeFixture;
 
 
     [Fact]
-    public void MockEscapedLink_IsCorrupted()
+    public void LinkEscapesTargetsScope_IsCorrupted()
     {
         // Arrange
 
         // Act
-        _mockEscape(out LinkTo<DummyStruct> linkTo, 
-                    createTargetInScope: () => new DummyStruct(1, "test"));
+        _scopeFixture.LinkEscapesTargetsScope
+        (
+            out var linkTo, 
+            createTargetInScope: () => new DummyStruct(1, "test")
+        );
 
         // Assert
         Assert.NotEqual(1, linkTo.Target.IntValue);
@@ -23,13 +26,16 @@ public class ScopeFixtureTest(ScopeFixture scopeFixture) : IClassFixture<ScopeFi
     }
 
     [Fact]
-    public void MockEscapedLink_IsActive()
+    public void LinkEscapesTargetsScope_IsActive()
     {
         // Arrange
 
         // Act
-        _mockEscape(out LinkTo<DummyStruct> linkTo, 
-                                      createTargetInScope: () => new DummyStruct(1, "test"));
+        _scopeFixture.LinkEscapesTargetsScope
+        (
+            out var linkTo, 
+            createTargetInScope: () => new DummyStruct(1, "test")
+        );
 
         // Assert
         Assert.True(linkTo.IsActive());

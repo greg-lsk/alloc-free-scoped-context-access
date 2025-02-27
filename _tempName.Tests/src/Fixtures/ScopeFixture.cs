@@ -7,7 +7,9 @@ public class ScopeFixture : IDisposable
 {
     public void Dispose(){}
 
-    public void MockEscapedLink<T>(out LinkTo<T> linkTo, Func<T> createTargetInScope) where T : struct
+    public void LinkEscapesTargetsScope<T>(out LinkTo<T> linkTo,
+                                           Func<T> createTargetInScope) 
+                                           where T : struct
     {
         var scopedTarget = createTargetInScope();
         linkTo = LinkTo<T>.Create(in scopedTarget);
