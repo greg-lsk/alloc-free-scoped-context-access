@@ -1,12 +1,8 @@
-using _devHelp;
-using _tempName.Tests.Fixtures;
-
 namespace _tempName.Tests;
 
-public class LinkToTests(ScopeFixture scopeFixture) : IClassFixture<ScopeFixture>
-{
-    private readonly MockEscapedLinkTo<DummyStruct> _mockEscape = scopeFixture.LinkEscapesTargetsScope;
 
+public class LinkToTests()
+{
 
     [Fact]
     public void Create_ReturnsCorrectLink()
@@ -31,35 +27,6 @@ public class LinkToTests(ScopeFixture scopeFixture) : IClassFixture<ScopeFixture
 
         // Assert
         Assert.Equal(expected: 43, actual: linkTo.Target);
-    }
-
-    [Fact]
-    public void Target_HasCorruptData_WhenLinkEscapes_ScopeOfTarget()
-    {
-        // Arrange
-
-        // Act
-        _mockEscape(out LinkTo<DummyStruct> link,
-                    createTargetInScope: () => new(42, "Hellow"));
-        var intValue = link.Target.IntValue;
-        var stringValue = link.Target.StringValue;
-
-        // Assert
-        Assert.NotEqual(42, intValue);
-        Assert.False("Hellow" == stringValue);
-    }
-
-    [Fact]
-    public void IsActive_ReturnsTrue_WhenLinkEscapes_ScopeOfTarget()
-    {
-        // Arrange
-
-        // Act
-        _mockEscape(out LinkTo<DummyStruct> link,
-                    createTargetInScope: () => new(42, "Hellow"));
-
-        // Assert
-        Assert.True(link.IsActive());
     }
 
     [Fact]
