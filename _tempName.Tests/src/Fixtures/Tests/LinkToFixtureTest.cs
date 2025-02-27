@@ -47,7 +47,7 @@ public class LinkToFixtureTest
     }
 
     [Fact]
-    public void ArrangeLinkTo_Throws_ArgumentException_WhenProvidingInvalidState()
+    public void ArrangeLinkTo_Throws_InvalidDataException_WhenProvidingInvalidState()
     {
         // Arrange
         var fixture = new LinkToFixture();
@@ -56,6 +56,6 @@ public class LinkToFixtureTest
         void act() => fixture.ArrangeLinkTo((LinkState)8, 2);
 
         // Assert
-        Assert.Throws<ArgumentException>(act);
+        Assert.Throws<InvalidDataException>(act);
     }         
 }

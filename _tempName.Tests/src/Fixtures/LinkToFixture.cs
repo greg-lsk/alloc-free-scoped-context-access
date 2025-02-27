@@ -17,6 +17,6 @@ public class LinkToFixture : IDisposable
     {
         LinkState.Active => LinkTo<T>.Create(in target),
         LinkState.Inactive => default,
-        _ => throw new ArgumentException("Invalid LinkState")
+        _ => throw new InvalidDataException("Invalid LinkState")
     };  
 }
