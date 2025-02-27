@@ -11,7 +11,8 @@ public class IRemoteTests(LinkToFixture linkToFixture, RemoteFixture remoteFixtu
 {
     private readonly ArrangeLinkTo<DummyStruct> _arrangeLink = linkToFixture.ArrangeLinkTo;
     private readonly ArrangeRemote<DummyRemote, DummyStruct> _arrangeRemote =
-    remoteFixture.ArrangeRemote<DummyRemote, DummyStruct>; 
+        remoteFixture.ArrangeRemote<DummyRemote, DummyStruct>; 
+
 
     [Fact]
     public void Get_ReturnsCorrectValue_WhenActiveLink_IsProvided()

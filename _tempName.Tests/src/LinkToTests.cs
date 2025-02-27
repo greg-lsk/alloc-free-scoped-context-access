@@ -45,7 +45,8 @@ public class LinkToTests(ScopeFixture scopeFixture) : IClassFixture<ScopeFixture
         var stringValue = link.Target.StringValue;
 
         // Assert
-        Assert.False(intValue == 42 && stringValue == "Hellow");
+        Assert.NotEqual(42, intValue);
+        Assert.NotEqual("Hellow", stringValue);
     }
 
     [Fact]
